@@ -1,0 +1,35 @@
+Q. How to display employees whose salary between 15000 and 25000 without using between operators?
+--select * from employees where salary like '[15000-25000]%';
+
+Q. Display employees whose COMMISION_PCT is other than 0.10.
+--select * from employees where COMMISION_PCT!=0.10;
+
+Q. Delete employees from department Purchasing and salary less than 2500.
+--
+
+Q. Display the list of employees having first name ‘David’ or ‘Diana’ without using 'LIKE'.
+--SELECT * FROM EMPLOYEES WHERE FIRST_NAME='DAVID' OR 'DIANA'
+
+Q. Get all employee details whose "FirstName" contains 'K'
+--SELECT * FROM EMPLOYEES WHERE FIRSTNAME LIKE 'K%';
+
+Q. Get all employee details whose "FirstName" starts with any single character between 'a-p'
+--SELECT * FROM EMPLOYEES WHERE FIRSTNAME LIKE '[A-P]%';
+SELECT * FROM EMPLOYEES WHERE FIRSTNAME BETWEEN A-P;
+
+Q. Get employee details whose joining date between "2013-01-01" and "2016-09-08"
+
+Q. Get dept wise avg salary and order by salary asc
+SELECT DEPT AVG(SALARY) ORDER BY SALARY ASC FROM EMPLOYEES;
+
+Q. Find out 2nd max salary using top and subquery
+SELECT TOP 2* FROM EMPLOYEES WHERE SALARY < (SELECT MAX(SALARY) FROM EMPLOYEES;
+
+Q. Write down query to fetch project name and assign to more than one employee
+
+Q. Finf out 3rd min salary using subquery
+--SELECT MIN(SALARY) AS SALARY FROM EMPLOYEES WHERE SALARY > (SELECT MIN(SALARY) FROM EMPLOYEES);
+
+
+
+(Dont Discuss Answers in group)
